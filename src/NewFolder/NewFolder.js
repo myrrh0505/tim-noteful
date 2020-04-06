@@ -3,9 +3,9 @@ import ValidationError from '../ValidationError';
 import config from '../config';
 import NotefulContext from '../NotefulContext';
 import NotefulError from '../NotefulError';
-import './AddFolder.css';
+import './NewFolder.css';
 
-export default class AddFolder extends React.Component {
+export default class NewFolder extends React.Component {
     static contextType = NotefulContext; 
     constructor(props) {
         super(props);

@@ -122,7 +122,7 @@ export default class AddNote extends React.Component {
         const folder_idError = this.validateFolderId();
         const modified = moment().toDate();
          return (
-            <form className = "newNote"
+            <form className = "AddNote"
                 onSubmit = {(e) => this.handleSubmit(e)}>
                 <NotefulError>
                     <h2>Create a new note!</h2>

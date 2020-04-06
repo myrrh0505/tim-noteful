@@ -8,7 +8,7 @@ import Header from '../Header/Header';
 import NotefulContext from '../NotefulContext';
 import config from '../config';
 import AddNote from '../AddNote/AddNote';
-import AddFolder from '../AddFolder/AddFolder';
+import NewFolder from '../NewFolder/NewFolder';
 import './App.css';
 
 class App extends React.Component {
@@ -61,7 +61,7 @@ class App extends React.Component {
     });
   }
 
-  addFolder = folder => {
+ NewFolder  = folder => {
     this.setState({
       folders: [ ...this.state.folders, folder],
     });
@@ -117,7 +117,7 @@ class App extends React.Component {
                 />
                 <Route 
                   path = '/add-folder' 
-                  component = {AddFolder} 
+                  component = {NewFolder} 
                 />
                 <Route 
                   path = '/add-note' 
@@ -133,7 +133,7 @@ class App extends React.Component {
       notes: this.state.notes,
       deleteNote: this.handleDeleteNote,
       addNote: this.addNote,
-      addFolder: this.addFolder
+      newFolder: this.newFolder
       // deleteFolder: this.deleteFolder
     };
     return(
