@@ -51,7 +51,7 @@ export default class NewFolder extends React.Component {
                 name: {value: data.name},
                 id: data.id
             })
-            this.context.addFolder(data)
+            this.context.newFolder(data)
             this.props.history.push('/')
         })
     }
