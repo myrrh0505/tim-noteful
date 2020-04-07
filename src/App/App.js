@@ -61,17 +61,13 @@ class App extends React.Component {
     });
   }
 
- NewFolder  = folder => {
+ newFolder  = folder => {
     this.setState({
       folders: [ ...this.state.folders, folder],
     });
   }
 
-  // handleDeleteFolder = folderId => {
-  //   this.setState({
-  //     folders: this.state.folders.filter(folder => folder.id !== folderId)
-  //   });
-  // }
+
 
   renderFolderRoutes() {
     return (
